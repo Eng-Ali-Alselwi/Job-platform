@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>وظفني | منصة التوظيف الذكية</title>
+    <meta
+      name="description"
+      content="منصة عربية حديثة تربط الباحثين عن العمل بالشركات من خلال فرص مميزة وتجارب توظيف فاخرة."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <nav class="navbar navbar-expand-lg navbar-glass sticky-top py-2">
+        <div class="container px-3">
+          <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+            <span class="brand-mark" aria-hidden="true"><i class="bi bi-check-circle-fill"></i></span>
+            <span class="brand-text">
+              <span class="brand-title">أمر تم</span>
+            </span>
+          </a>
+
+          <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex" id="navbarNav">
+            <ul class="navbar-nav align-items-center gap-2 gap-lg-3">
+              <li class="nav-item"><a class="nav-link active" href="#">الرئيسية</a></li>
+              <li class="nav-item"><a class="nav-link" href="#services">الخدمات</a></li>
+              <li class="nav-item"><a class="nav-link" href="#jobs">الوظائف</a></li>
+              <li class="nav-item"><a class="nav-link" href="#companies">شركات التوظيف</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">شركات الاستقدام</a></li>
+            </ul>
+          </div>
+
+          <div class="d-flex align-items-center gap-2 ms-lg-3">
+            <button class="btn theme-toggle" type="button" aria-label="تبديل السمة" title="تبديل السمة">
+              <i class="bi bi-sun-fill icon-light"></i>
+              <i class="bi bi-moon-fill icon-dark"></i>
+            </button>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="فتح القائمة">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="btn btn-outline-primary btn-pill px-3 py-2 d-none d-lg-inline-flex">تسجيل الدخول</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">وظفني</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="إغلاق"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item"><a class="nav-link" href="#">الرئيسية</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">الخدمات</a></li>
+            <li class="nav-item"><a class="nav-link" href="#jobs">الوظائف</a></li>
+            <li class="nav-item"><a class="nav-link" href="#companies">شركات التوظيف</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">شركات الاستقدام</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">تواصل معنا</a></li>
+          </ul>
+          <div class="mt-4 d-flex flex-column gap-2">
+            <a href="#" class="btn btn-outline-primary">تسجيل الدخول</a>
+          </div>
+        </div>
+      </div>
+
+      <main>
+        <section class="hero-section">
+          <div class="container d-flex align-items-center justify-content-start">
+            <div class="hero-copy col-12 col-lg-6 me-auto" data-aos="fade-up" data-aos-duration="800">
+              <div class="eyebrow mb-3">
+                <i class="bi bi-stars"></i>
+                <span>حلول رقمية ذكية تربط الجميع</span>
+              </div>
+              <h2>منصة ذكية متكاملة <span class="accent-title">للتوظيف والاستقدام</span></h2>
+              <p>منصة رقمية موحدة تربط الباحثين عن العمل وأصحاب الأعمال وشركات التوظيف ومكاتب الاستقدام عبر حلول ذكية تعتمد على الذكاء الاصطناعي لتسريع التوظيف وتحسين جودة المطابقة بين جميع الأطراف.</p>
+
+              <div class="d-flex flex-wrap gap-3 mt-3 justify-content-start" aria-label="الخدمات الأساسية">
+                <span class="service-chip color-1"><i class="bi bi-briefcase"></i>التوظيف</span>
+                <span class="service-chip color-2"><i class="bi bi-building"></i>الاستقدام</span>
+                <!-- <span class="service-chip color-3"><i class="bi bi-people"></i>إدارة العمالة</span> -->
+                <span class="service-chip color-4"><i class="bi bi-diagram-3"></i>شركات التوظيف</span>
+                <span class="service-chip color-5"><i class="bi bi-house-door"></i>مكاتب الاستقدام</span>
+                <span class="service-chip color-6"><i class="bi bi-person-bounding-box"></i>العمالة المنزلية</span>
+              </div>
+
+              
+              <div class="d-flex flex-wrap gap-3 mt-4 justify-content-start">
+                <a href="#" class="btn btn-primary btn-pill btn-lg">ابدأ رحلتك الآن</a>
+                <a href="#" class="btn btn-outline-light btn-pill btn-lg">استكشف الخدمات</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+                <section class="featured-jobs-section" id="about" data-aos="fade-up" data-aos-duration="900">
+          <div class="container">
+            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-start gap-3 mb-4">
+              <div>
+                <div class="eyebrow mb-3">توصيات مخصصة</div>
+                <h3 class="section-title">وظائف مميزة تناسب مهاراتك</h3>
+                <p class="text-muted mt-2 mb-0">نقدم لك فرصًا مختارة بعناية لتناسب خبراتك واهتماماتك وتمنحك خطوة أقرب إلى الوظيفة المناسبة.</p>
+              </div>
+              <div class="d-flex flex-wrap gap-2 align-items-center">
+                <span class="filter-pill">دوام كامل</span>
+                <span class="filter-pill">عن بعد</span>
+                <span class="filter-pill">مستوى متوسط</span>
+              </div>
+            </div>
+
+            <div class="job-filter-bar glass-panel p-3 p-lg-4 mb-4">
+              <div class="row g-2 align-items-center">
+                <div class="col-12 col-md-4">
+                  <div class="position-relative">
+                    <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"></i>
+                    <input type="text" class="form-control form-control-sm ps-5" placeholder="ابحث عن وظيفة" />
+                  </div>
+                </div>
+                <div class="col-6 col-md-2">
+                  <select class="form-select form-select-sm">
+                    <option>نوع العمل</option>
+                    <option>دوام كامل</option>
+                    <option>دوام جزئي</option>
+                    <option>عن بعد</option>
+                  </select>
+                </div>
+                <div class="col-6 col-md-2">
+                  <select class="form-select form-select-sm">
+                    <option>الخبرة</option>
+                    <option>مبتدئ</option>
+                    <option>متوسط</option>
+                    <option>متقدم</option>
+                  </select>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="d-flex flex-wrap gap-2 justify-content-md-end">
+                    <button class="btn btn-chip filter-chip active">الكل</button>
+                    <button class="btn btn-chip filter-chip">تقنية</button>
+                    <button class="btn btn-chip filter-chip">إدارة</button>
+                    <button class="btn btn-chip filter-chip">مالية</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row g-3">
+              <div class="col-12 col-md-6 col-xl-4">
+                <article class="job-card glass-panel p-4 h-100">
+                  <div class="d-flex justify-content-between align-items-start gap-3">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="company-mark company-mark-sm">T</div>
+                      <div>
+                        <div class="text-muted small">TechNova</div>
+                        <h4 class="mb-0">Senior Product Designer</h4>
+                      </div>
+                    </div>
+                    <button class="btn btn-save" type="button" aria-label="حفظ الوظيفة">
+                      <i class="bi bi-bookmark"></i>
+                    </button>
+                  </div>
+                  <div class="mt-3 d-flex flex-wrap gap-2">
+                    <span class="job-tag">عن بُعد</span>
+                    <span class="job-tag">دوام كامل</span>
+                    <span class="job-tag">Senior</span>
+                  </div>
+                  <div class="job-meta mt-3">
+                    <span><i class="bi bi-geo-alt"></i> الرياض</span>
+                    <span><i class="bi bi-cash-coin"></i> 24,000 - 30,000 ر.س</span>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mt-4">
+                    <span class="ai-match">مطابق 92% لمهاراتك</span>
+                    <a href="#" class="btn btn-primary btn-pill btn-sm">تقدم الآن</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-12 col-md-6 col-xl-4">
+                <article class="job-card glass-panel p-4 h-100">
+                  <div class="d-flex justify-content-between align-items-start gap-3">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="company-mark company-mark-sm">N</div>
+                      <div>
+                        <div class="text-muted small">North Labs</div>
+                        <h4 class="mb-0">Frontend Engineer</h4>
+                      </div>
+                    </div>
+                    <button class="btn btn-save" type="button" aria-label="حفظ الوظيفة">
+                      <i class="bi bi-bookmark"></i>
+                    </button>
+                  </div>
+                  <div class="mt-3 d-flex flex-wrap gap-2">
+                    <span class="job-tag">هجين</span>
+                    <span class="job-tag">دوام كامل</span>
+                    <span class="job-tag">Mid</span>
+                  </div>
+                  <div class="job-meta mt-3">
+                    <span><i class="bi bi-geo-alt"></i> جدة</span>
+                    <span><i class="bi bi-cash-coin"></i> 18,000 - 24,000 ر.س</span>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mt-4">
+                    <span class="ai-match">مطابق 88% لمهاراتك</span>
+                    <a href="#" class="btn btn-primary btn-pill btn-sm">تقدم الآن</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-12 col-md-6 col-xl-4">
+                <article class="job-card glass-panel p-4 h-100">
+                  <div class="d-flex justify-content-between align-items-start gap-3">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="company-mark company-mark-sm">M</div>
+                      <div>
+                        <div class="text-muted small">Mosaic</div>
+                        <h4 class="mb-0">Operations Manager</h4>
+                      </div>
+                    </div>
+                    <button class="btn btn-save" type="button" aria-label="حفظ الوظيفة">
+                      <i class="bi bi-bookmark"></i>
+                    </button>
+                  </div>
+                  <div class="mt-3 d-flex flex-wrap gap-2">
+                    <span class="job-tag">دوام كامل</span>
+                    <span class="job-tag">مكتبي</span>
+                    <span class="job-tag">Senior</span>
+                  </div>
+                  <div class="job-meta mt-3">
+                    <span><i class="bi bi-geo-alt"></i> دبي</span>
+                    <span><i class="bi bi-cash-coin"></i> 26,000 - 34,000 ر.س</span>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mt-4">
+                    <span class="ai-match">مطابق 90% لمهاراتك</span>
+                    <a href="#" class="btn btn-primary btn-pill btn-sm">تقدم الآن</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="phase-two-section" id="jobs">
+          <div class="container">
+            <div class="glass-panel p-4 p-xl-5 mb-5" data-aos="fade-up" data-aos-duration="900">
+              <div class="d-flex flex-column flex-lg-row justify-content-between align-items-start gap-3">
+                <div>
+                  <div class="eyebrow mb-3">ابحث بذكاء</div>
+                  <h3>ابحث عن أفضل الفرص عبر بحث قوي وسريع.</h3>
+                  <p class="text-muted mt-2 mb-0">صممنا هذه التجربة لتوجّهك نحو الفرص الأكثر ملاءمة مع تحكم مرن في الموقع ونوع العمل.</p>
+                </div>
+                <div class="align-self-end">
+                  <a href="#companies" class="btn btn-outline-light btn-pill">استعرض الشركات</a>
+                </div>
+              </div>
+
+              <form class="row g-3 align-items-end mt-4">
+                <div class="col-12 col-sm-6 col-xl-3">
+                  <label class="form-label" for="jobKeyword">المسمى الوظيفي أو كلمة البحث</label>
+                  <input id="jobKeyword" type="text" class="form-control form-control-lg" placeholder="مثال: Laravel، تسويق، مدير مشاريع" />
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3">
+                  <label class="form-label" for="jobLocation">المدينة أو الموقع</label>
+                  <input id="jobLocation" type="text" class="form-control form-control-lg" placeholder="الرياض، جدة، عن بعد" />
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3">
+                  <label class="form-label" for="jobType">نوع التوظيف</label>
+                  <select id="jobType" class="form-select form-select-lg">
+                    <option selected>اختر نوع التوظيف</option>
+                    <option>دوام كامل</option>
+                    <option>دوام جزئي</option>
+                    <option>عقد مؤقت</option>
+                    <option>عن بعد</option>
+                  </select>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3 d-grid">
+                  <button type="submit" class="btn btn-primary btn-lg btn-pill">ابحث الآن</button>
+                </div>
+              </form>
+
+              <div class="popular-searches mt-4">
+                <div class="d-flex align-items-center justify-content-between flex-column flex-md-row gap-2">
+                  <h6 class="mb-0">البحث الشائع</h6>
+                  <p class="text-muted mb-0">انقر لتعبئة خانة البحث بسرعة.</p>
+                </div>
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                  <button type="button" class="btn btn-chip search-chip" data-search="Laravel">Laravel</button>
+                  <button type="button" class="btn btn-chip search-chip" data-search="Flutter">Flutter</button>
+                  <button type="button" class="btn btn-chip search-chip" data-search="UI/UX">UI/UX</button>
+                  <button type="button" class="btn btn-chip search-chip" data-search="مدير مشاريع">مدير مشاريع</button>
+                  <button type="button" class="btn btn-chip search-chip" data-search="موارد بشرية">موارد بشرية</button>
+                  <button type="button" class="btn btn-chip search-chip" data-search="محاسب">محاسب</button>
+                  <button type="button" class="btn btn-chip search-chip" data-search="دوام كامل">دوام كامل</button>
+                  <button type="button" class="btn btn-chip search-chip" data-search="عن بعد">عن بعد</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="trust-section mb-5" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
+              <div class="d-flex flex-column flex-md-row justify-content-between align-items-start gap-3 mb-4">
+                <div>
+                  <div class="eyebrow mb-3">ثقة من الشركات</div>
+                  <h3 class="section-title">موثوق من قبل نخبة من الشركات الرائدة</h3>
+                </div>
+                <p class="text-muted mb-0">شركات تعمل بثقة وتثق في سرعة وصولك للمرشحين المناسبين.</p>
+              </div>
+
+              <div class="row g-3" id="companies">
+                <div class="col-6 col-md-4 col-xl-3">
+                  <div class="company-card card p-3 h-100">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                      <div class="company-mark">A</div>
+                      <div>
+                        <h5 class="mb-1">ألفا تك</h5>
+                        <p class="text-muted mb-0">تكنولوجيا ومشاريع رقمية</p>
+                      </div>
+                    </div>
+                    <p class="small text-muted">توظيف فنيين عالي الجودة مع عملية ذكية.</p>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3">
+                  <div class="company-card card p-3 h-100">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                      <div class="company-mark">ب</div>
+                      <div>
+                        <h5 class="mb-1">بيان شركة</h5>
+                        <p class="text-muted mb-0">استشارات وإدارة موارد بشرية</p>
+                      </div>
+                    </div>
+                    <p class="small text-muted mb-0">تجربة بحث توظيف متكاملة ومتميزة.</p>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3">
+                  <div class="company-card card p-3 h-100">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                      <div class="company-mark">ج</div>
+                      <div>
+                        <h5 class="mb-1">جسر الأعمال</h5>
+                        <p class="text-muted mb-0">حلول أعمال ومبيعات</p>
+                      </div>
+                    </div>
+                    <p class="small text-muted mb-0">شبكة وظائف عريضة تناسب العديد من القطاعات.</p>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3">
+                  <div class="company-card card p-3 h-100">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                      <div class="company-mark">د</div>
+                      <div>
+                        <h5 class="mb-1">درة للتطوير</h5>
+                        <p class="text-muted mb-0">تصميم، تطوير، وتوظيف إبداعي</p>
+                      </div>
+                    </div>
+                    <p class="small text-muted mb-0">اعتماد على جودة المرشحين وخبرة المنصة.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="stats-section" data-aos="fade-up" data-aos-duration="900" data-aos-delay="200">
+              <div class="d-flex flex-column flex-md-row justify-content-between align-items-start gap-3 mb-4">
+                <div>
+                  <div class="eyebrow mb-3">إحصائيات حية</div>
+                  <h3 class="section-title">أرقام المنصة في الوقت الحقيقي</h3>
+                </div>
+                <p class="text-muted mb-0">كل بطاقة تعكس نموًا حقيقيًا وثقة متجددة.</p>
+              </div>
+
+              <div class="row g-3">
+                <div class="col-6 col-sm-6 col-md-3">
+                  <div class="stats-card p-4 h-100">
+                    <div class="icon mb-3"><i class="bi bi-briefcase-fill fs-4"></i></div>
+                    <strong class="counter" data-target="15000" data-suffix="+">0</strong>
+                    <span>وظيفة نشطة</span>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3">
+                  <div class="stats-card p-4 h-100">
+                    <div class="icon mb-3"><i class="bi bi-building"></i></div>
+                    <strong class="counter" data-target="850">0</strong>
+                    <span>شركة</span>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3">
+                  <div class="stats-card p-4 h-100">
+                    <div class="icon mb-3"><i class="bi bi-people-fill"></i></div>
+                    <strong class="counter" data-target="120" data-suffix="+">0</strong>
+                    <span>مرشح جديد يومياً</span>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3">
+                  <div class="stats-card p-4 h-100">
+                    <div class="icon mb-3"><i class="bi bi-check2-circle"></i></div>
+                    <strong class="counter" data-target="96" data-suffix="%">0</strong>
+                    <span>نسبة نجاح التوظيف</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="journey-section" id="services" data-aos="fade-up" data-aos-duration="900">
+          <div class="container">
+            <div class="text-center mb-5">
+              <div class="eyebrow mb-3">رحلة المستخدم</div>
+              <h3 class="section-title">رحلة التوظيف تبدأ بخطوات بسيطة</h3>
+              <p class="mx-auto text-muted mt-3" style="max-width: 40rem;">
+                من إنشاء ملفك الشخصي إلى متابعة طلباتك، تساعدك وظفني على التقدم بثقة وسهولة نحو الوظيفة المناسبة.
+              </p>
+            </div>
+
+            <div class="journey-timeline">
+              <div class="journey-step" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
+                <div class="journey-card">
+                  <div class="journey-number">01</div>
+                  <div class="journey-icon"><i class="bi bi-person-badge-fill"></i></div>
+                  <h4>أنشئ ملفك الشخصي</h4>
+                  <p>ابدأ بمظهر احترافي يبرز خبراتك ويجعل كل فرصة تبدو أقرب إليك، دون عناء أو تعقيد.</p>
+                </div>
+              </div>
+              <div class="journey-step" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                <div class="journey-card">
+                  <div class="journey-number">02</div>
+                  <div class="journey-icon"><i class="bi bi-stars"></i></div>
+                  <h4>دع المنصة تطابقك مع أفضل الفرص</h4>
+                  <p>نوفر عليك ساعات من البحث اليدوي عبر اقتراح وظائف تتناسب مع مهاراتك وطموحاتك بوضوح.</p>
+                </div>
+              </div>
+              <div class="journey-step" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                <div class="journey-card">
+                  <div class="journey-number">03</div>
+                  <div class="journey-icon"><i class="bi bi-send-fill"></i></div>
+                  <h4>قدّم بضغطة واحدة</h4>
+                  <p>تطبيقاتك تصبح أسرع وأسهل، وتصل إلى الشركات دون تعقيد أو خطوات مكررة.</p>
+                </div>
+              </div>
+              <div class="journey-step" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                <div class="journey-card">
+                  <div class="journey-number">04</div>
+                  <div class="journey-icon"><i class="bi bi-graph-up-arrow"></i></div>
+                  <h4>تابع حالة طلباتك</h4>
+                  <p>تعرف أين وصلت طلباتك وبأي مرحلة أنت، دون الحاجة إلى التواصل اليدوي مع كل شركة.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+                <section class="testimonials-section" id="testimonials" data-aos="fade-up" data-aos-duration="900">
+          <div class="container">
+            <div class="text-center mb-4 mb-lg-5">
+              <div class="eyebrow mb-3">شهادات حقيقية</div>
+              <h3 class="section-title">ماذا يقول المستخدمون عن وظفني</h3>
+              <p class="mx-auto text-muted mt-3" style="max-width: 46rem;">
+                هذه ليست مراجعات عامة، بل قصص أشخاص وجدوا فرصًا، وفرّغوا وقتًا، وبدأوا رحلتهم المهنية بثقة أكبر.
+              </p>
+            </div>
+
+            <div class="row g-4 align-items-stretch">
+              <div class="col-12 col-lg-7">
+                <article class="testimonial-card testimonial-featured glass-panel p-4 p-xl-5 h-100" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
+                  <div class="d-flex justify-content-between align-items-start gap-3 mb-4">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="testimonial-avatar">م</div>
+                      <div>
+                        <h4 class="mb-1">مريم السالم</h4>
+                        <p class="mb-0 testimonial-role">مهندسة برمجيات</p>
+                      </div>
+                    </div>
+                    <span class="testimonial-badge">تم التوظيف خلال 7 أيام</span>
+                  </div>
+                  <p class="testimonial-quote">
+                    حصلت على فرصة مناسبة جدًا خلال أسبوعين فقط، وكانت المنصة واضحة في كل خطوة. لم أضطر إلى إرسال عشرات الطلبات يدويًا، بل وجدت فرصًا أرسلتها مباشرة إلى الشركات التي تناسب خبرتي.
+                  </p>
+                  <div class="testimonial-footer mt-4">
+                    <span class="testimonial-stat-pill">حصلت على وظيفة خلال أسبوعين</span>
+                    <span class="testimonial-stat-pill">وفرت علي وقت البحث</span>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-12 col-lg-5">
+                <div class="row g-3 h-100">
+                  <div class="col-12">
+                    <article class="testimonial-card glass-panel p-4 h-100" data-aos="fade-up" data-aos-duration="900" data-aos-delay="150">
+                      <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="testimonial-avatar testimonial-avatar-sm">س</div>
+                        <div>
+                          <h4 class="mb-1">سلمان الحربي</h4>
+                          <p class="mb-0 testimonial-role">أخصائي موارد بشرية</p>
+                        </div>
+                      </div>
+                      <p class="testimonial-quote">
+                        ساعدتني المنصة في الوصول إلى مرشحين أكثر دقة، ووفرت علي وقتًا كبيرًا في التصفية والتواصل.
+                      </p>
+                    </article>
+                  </div>
+                  <div class="col-12">
+                    <article class="testimonial-card glass-panel p-4 h-100" data-aos="fade-up" data-aos-duration="900" data-aos-delay="200">
+                      <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="testimonial-avatar testimonial-avatar-sm">ر</div>
+                        <div>
+                          <h4 class="mb-1">ريم القحطاني</h4>
+                          <p class="mb-0 testimonial-role">مصممة تجربة مستخدم</p>
+                        </div>
+                      </div>
+                      <p class="testimonial-quote">
+                        تم ترشيحي لفرص لم أكن أجدها بنفسي، وهذا غير طريقة بحثي بالكامل نحو وظائف أفضل.
+                      </p>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-support-strip glass-panel mt-4 p-3 p-lg-4" data-aos="fade-up" data-aos-duration="900" data-aos-delay="250">
+              <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                <div class="d-flex align-items-center gap-2 text-muted">
+                  <i class="bi bi-shield-check"></i>
+                  <span>أكثر من 12,000 مستخدم وجدوا فرصة مناسبة عبر المنصة</span>
+                </div>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="testimonial-stat-pill">94% رضا المستخدمين</span>
+                  <span class="testimonial-stat-pill">شركات رائدة تثق في وظفني</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cta-section" data-aos="fade-up" data-aos-duration="900">
+          <div class="container">
+            <div class="cta-shell glass-panel text-center position-relative">
+              <!-- <div class="cta-orb orb-one"></div>
+              <div class="cta-orb orb-two"></div> -->
+
+              <div class="eyebrow mb-3">ابدأ الآن</div>
+              <h3 class="section-title">ابدأ رحلتك المهنية اليوم</h3>
+              <p class="mx-auto text-muted mt-3" style="max-width: 42rem;">
+                نحن نساعدك على العثور على فرص أفضل، ومطابقة خبراتك مع ما يناسبك، وتسهيل رحلتك في البحث عن العمل بكل بساطة.
+              </p>
+
+              <div class="d-flex flex-column flex-sm-row justify-content-center gap-2 mt-4">
+                <a href="#" class="btn btn-primary btn-pill btn-lg w-100 w-sm-auto">ابدأ مجاناً الآن</a>
+                <a href="#" class="btn btn-outline-light btn-pill btn-lg w-100 w-sm-auto">استعراض الوظائف</a>
+              </div>
+
+              <div class="row g-3 mt-4 text-start">
+                <div class="col-12 col-md-4">
+                  <div class="cta-value-card p-3 h-100">
+                    <div class="cta-icon"><i class="bi bi-search"></i></div>
+                    <h4>تصفح آلاف الفرص المهنية</h4>
+                    <p>تجد فرصًا مرتبة ومناسبة لخبراتك بسهولة.</p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="cta-value-card p-3 h-100">
+                    <div class="cta-icon"><i class="bi bi-clock-history"></i></div>
+                    <h4>نوفر عليك وقت البحث اليدوي</h4>
+                    <p>نقربك من الفرص المناسبة دون إهدار وقتك في التصفح المتكرر.</p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="cta-value-card p-3 h-100">
+                    <div class="cta-icon"><i class="bi bi-lightning-charge"></i></div>
+                    <h4>قدّم على الوظائف بسهولة خلال ثوانٍ</h4>
+                    <p>تتقدم للوظائف بخطوات واضحة وأقل تعقيدًا.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cta-trust mt-4 pt-3">
+                <p class="mb-0 text-muted">انضم إلى آلاف المستخدمين الذين وجدوا وظائف عبر وظفني</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
