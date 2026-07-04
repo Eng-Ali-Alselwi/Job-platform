@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
   <head>
+    <!-- Head Section Start -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>وظفني | منصة التوظيف الذكية</title>
@@ -24,9 +25,11 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Head Section End -->
   </head>
   <body>
     <div class="page-shell">
+      <!-- Navbar Section Start -->
       <nav class="navbar navbar-expand-lg navbar-glass sticky-top py-2">
         <div class="container px-3">
           <a class="navbar-brand d-flex align-items-center gap-2" href="#">
@@ -39,10 +42,81 @@
           <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex" id="navbarNav">
             <ul class="navbar-nav align-items-center gap-2 gap-lg-3">
               <li class="nav-item"><a class="nav-link active" href="#">الرئيسية</a></li>
-              <li class="nav-item"><a class="nav-link" href="#services">الخدمات</a></li>
-              <li class="nav-item"><a class="nav-link" href="#jobs">الوظائف</a></li>
-              <li class="nav-item"><a class="nav-link" href="#companies">شركات التوظيف</a></li>
-              <li class="nav-item"><a class="nav-link" href="#about">شركات الاستقدام</a></li>
+
+              <li class="nav-item dropdown nav-mega-dropdown">
+                <a class="nav-link dropdown-toggle d-flex align-items-center gap-1" href="#jobs" id="jobsMegaMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span>الوظائف</span>
+                </a>
+                <div class="dropdown-menu border-0" aria-labelledby="jobsMegaMenu">
+                  <div class="mega-menu-panel">
+                    <div class="row g-3 align-items-start">
+                      <div class="">
+                        <div class="row g-2">
+                          <div class="col-6">
+                            <a class="mega-menu-link" href="#">فرص مميزة <i class="bi bi-arrow-left"></i></a>
+                            <a class="mega-menu-link" href="#">وظائف تنفيذية <i class="bi bi-arrow-left"></i></a>
+                            <a class="mega-menu-link" href="#">وظائف مهنية <i class="bi bi-arrow-left"></i></a>
+                          </div>
+                          <div class="col-6">
+                            <a class="mega-menu-link" href="#">وظائف جزئية <i class="bi bi-arrow-left"></i></a>
+                            <a class="mega-menu-link" href="#">وظائف عن بعد <i class="bi bi-arrow-left"></i></a>
+                            <a class="mega-menu-link" href="#">وظائف موسمية <i class="bi bi-arrow-left"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown nav-mega-dropdown">
+                <a class="nav-link dropdown-toggle d-flex align-items-center gap-1" href="#companies" id="agenciesMegaMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span>شركات التوظيف</span>
+                </a>
+                <div class="dropdown-menu border-0" aria-labelledby="agenciesMegaMenu">
+                  <div class="mega-menu-panel">
+                    <div class="row g-3 align-items-start">
+                      <div class="">
+                        <div class="row g-2">
+                          <div class="col-6">
+                            <a class="mega-menu-link" href="#">جميع الوكالات <i class="bi bi-arrow-left"></i></a>
+                            <a class="mega-menu-link" href="#">وكالات دولية <i class="bi bi-arrow-left"></i></a>
+                            <a class="mega-menu-link" href="#">وكالات محلية <i class="bi bi-arrow-left"></i></a>
+                          </div>
+                          <div class="col-6">
+                            <a class="mega-menu-link" href="#">الأعلى تقييماً <i class="bi bi-arrow-left"></i></a>
+                            <a class="mega-menu-link" href="#">حسب الصناعة <i class="bi bi-arrow-left"></i></a>
+                            <a class="mega-menu-link" href="#">شركاء مميزون <i class="bi bi-arrow-left"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown nav-mega-dropdown">
+                <a class="nav-link dropdown-toggle d-flex align-items-center gap-1" href="#services" id="servicesMegaMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span>الخدمات</span>
+                </a>
+                <div class="dropdown-menu border-0" aria-labelledby="servicesMegaMenu">
+                  <div class="mega-menu-panel">
+                    <div class="row g-3 align-items-start">
+                      <div class="">
+                        <div class="row g-2">
+                          <div class="col-12">
+                            <a class="mega-menu-link" href="#">تأجير العمالة <i class="bi bi-arrow-left"></i></a>
+                            <a class="mega-menu-link" href="#">العمالة المنزلية <i class="bi bi-arrow-left"></i></a>
+                            <a class="mega-menu-link" href="#">الخدمات الإدارية <i class="bi bi-arrow-left"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item"><a class="nav-link" href="#contact">تواصل معنا</a></li>
             </ul>
           </div>
 
@@ -58,28 +132,81 @@
           </div>
         </div>
       </nav>
+      <!-- Navbar Section End -->
 
+      <!-- Mobile Menu Section Start -->
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasNavbarLabel">وظفني</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="إغلاق"></button>
         </div>
         <div class="offcanvas-body d-flex flex-column justify-content-between">
-          <ul class="navbar-nav gap-3">
-            <li class="nav-item"><a class="nav-link" href="#">الرئيسية</a></li>
-            <li class="nav-item"><a class="nav-link" href="#services">الخدمات</a></li>
-            <li class="nav-item"><a class="nav-link" href="#jobs">الوظائف</a></li>
-            <li class="nav-item"><a class="nav-link" href="#companies">شركات التوظيف</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about">شركات الاستقدام</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">تواصل معنا</a></li>
-          </ul>
+          <div class="d-flex flex-column gap-2">
+            <a class="mobile-nav-link" href="#" data-bs-dismiss="offcanvas">الرئيسية</a>
+
+            <div class="accordion accordion-flush mobile-nav-accordion" id="mobileNavAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mobileJobsMenu" aria-expanded="false" aria-controls="mobileJobsMenu">
+                    الوظائف
+                  </button>
+                </h2>
+                <div id="mobileJobsMenu" class="accordion-collapse collapse" data-bs-parent="#mobileNavAccordion">
+                  <div class="accordion-body">
+                    <a class="mobile-nav-link" href="#" data-bs-dismiss="offcanvas">وظائف تنفيذية</a>
+                    <a class="mobile-nav-link" href="#" data-bs-dismiss="offcanvas">وظائف مهنية</a>
+                    <a class="mobile-nav-link" href="#" data-bs-dismiss="offcanvas">وظائف عن بعد</a>
+                    <a class="mobile-nav-link" href="#" data-bs-dismiss="offcanvas">وظائف جزئية</a>
+                    <a class="mobile-nav-link" href="#" data-bs-dismiss="offcanvas">وظائف موسمية</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mobileAgenciesMenu" aria-expanded="false" aria-controls="mobileAgenciesMenu">
+                    شركات التوظيف
+                  </button>
+                </h2>
+                <div id="mobileAgenciesMenu" class="accordion-collapse collapse" data-bs-parent="#mobileNavAccordion">
+                  <div class="accordion-body">
+                    <a class="mobile-nav-link" href="#" data-bs-dismiss="offcanvas">جميع الوكالات</a>
+                    <a class="mobile-nav-link" href="#" data-bs-dismiss="offcanvas">وكالات دولية</a>
+                    <a class="mobile-nav-link" href="#" data-bs-dismiss="offcanvas">وكالات محلية</a>
+                    <a class="mobile-nav-link" href="#" data-bs-dismiss="offcanvas">الأعلى تقييماً</a>
+                    <a class="mobile-nav-link" href="#" data-bs-dismiss="offcanvas">حسب الصناعة</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mobileServicesMenu" aria-expanded="false" aria-controls="mobileServicesMenu">
+                    الخدمات
+                  </button>
+                </h2>
+                <div id="mobileServicesMenu" class="accordion-collapse collapse" data-bs-parent="#mobileNavAccordion">
+                  <div class="accordion-body">
+                    <a class="mobile-nav-link" href="#" data-bs-dismiss="offcanvas">تأجير العمالة</a>
+                    <a class="mobile-nav-link" href="#" data-bs-dismiss="offcanvas">العمالة المنزلية</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a class="mobile-nav-link" href="#contact" data-bs-dismiss="offcanvas">تواصل معنا</a>
+          </div>
+
           <div class="mt-4 d-flex flex-column gap-2">
             <a href="#" class="btn btn-outline-primary">تسجيل الدخول</a>
           </div>
         </div>
       </div>
+      <!-- Mobile Menu Section End -->
 
+      <!-- Main Content Start -->
       <main>
+        <!-- Hero Section Start -->
         <section class="hero-section">
           <div class="container d-flex align-items-center justify-content-start">
             <div class="hero-copy col-12 col-lg-6 me-auto" data-aos="fade-up" data-aos-duration="800">
@@ -88,170 +215,33 @@
                 <span>حلول رقمية ذكية تربط الجميع</span>
               </div>
               <h2>منصة ذكية متكاملة <span class="accent-title">للتوظيف والاستقدام</span></h2>
-              <p>منصة رقمية موحدة تربط الباحثين عن العمل وأصحاب الأعمال وشركات التوظيف ومكاتب الاستقدام عبر حلول ذكية تعتمد على الذكاء الاصطناعي لتسريع التوظيف وتحسين جودة المطابقة بين جميع الأطراف.</p>
+              <p>منصة رقمية موحدة تربط الباحثين عن العمل وأصحاب الأعمال وشركات التوظيف ومكاتب الاستقدام عبر حلول ذكية تعتمد على خوارزميات الذكاء الاصطناعي لتسريع التوظيف وتحسين جودة المطابقة بين جميع الأطراف.</p>
 
-              <div class="d-flex flex-wrap gap-3 mt-3 justify-content-start" aria-label="الخدمات الأساسية">
+              <div class="hero-chips d-flex align-items-center mt-3" aria-label="الخدمات الأساسية">
                 <span class="service-chip color-1"><i class="bi bi-briefcase"></i>التوظيف</span>
                 <span class="service-chip color-2"><i class="bi bi-building"></i>الاستقدام</span>
-                <!-- <span class="service-chip color-3"><i class="bi bi-people"></i>إدارة العمالة</span> -->
+                <span class="service-chip color-3"><i class="bi bi-people"></i>إدارة العمالة</span>
                 <span class="service-chip color-4"><i class="bi bi-diagram-3"></i>شركات التوظيف</span>
                 <span class="service-chip color-5"><i class="bi bi-house-door"></i>مكاتب الاستقدام</span>
                 <span class="service-chip color-6"><i class="bi bi-person-bounding-box"></i>العمالة المنزلية</span>
               </div>
 
-              
-              <div class="d-flex flex-wrap gap-3 mt-4 justify-content-start">
+              <div class="hero-features d-flex align-items-center mt-2" aria-hidden="false">
+                <div class="feature-item"><i class="bi bi-check-lg"></i><span>مطابقة ذكية للمهارات</span></div>
+                <div class="feature-item"><i class="bi bi-check-lg"></i><span>تقديم بضغطة واحدة</span></div>
+                <div class="feature-item d-none d-md-flex"><i class="bi bi-check-lg"></i><span>شركات موثوقة</span></div>
+              </div>
+
+              <div class="d-flex flex-wrap gap-3 mt-3 justify-content-start hero-actions">
                 <a href="#" class="btn btn-primary btn-pill btn-lg">ابدأ رحلتك الآن</a>
                 <a href="#" class="btn btn-outline-light btn-pill btn-lg">استكشف الخدمات</a>
               </div>
             </div>
           </div>
         </section>
+        <!-- Hero Section End -->
 
-                <section class="featured-jobs-section" id="about" data-aos="fade-up" data-aos-duration="900">
-          <div class="container">
-            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-start gap-3 mb-4">
-              <div>
-                <div class="eyebrow mb-3">توصيات مخصصة</div>
-                <h3 class="section-title">وظائف مميزة تناسب مهاراتك</h3>
-                <p class="text-muted mt-2 mb-0">نقدم لك فرصًا مختارة بعناية لتناسب خبراتك واهتماماتك وتمنحك خطوة أقرب إلى الوظيفة المناسبة.</p>
-              </div>
-              <div class="d-flex flex-wrap gap-2 align-items-center">
-                <span class="filter-pill">دوام كامل</span>
-                <span class="filter-pill">عن بعد</span>
-                <span class="filter-pill">مستوى متوسط</span>
-              </div>
-            </div>
-
-            <div class="job-filter-bar glass-panel p-3 p-lg-4 mb-4">
-              <div class="row g-2 align-items-center">
-                <div class="col-12 col-md-4">
-                  <div class="position-relative">
-                    <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"></i>
-                    <input type="text" class="form-control form-control-sm ps-5" placeholder="ابحث عن وظيفة" />
-                  </div>
-                </div>
-                <div class="col-6 col-md-2">
-                  <select class="form-select form-select-sm">
-                    <option>نوع العمل</option>
-                    <option>دوام كامل</option>
-                    <option>دوام جزئي</option>
-                    <option>عن بعد</option>
-                  </select>
-                </div>
-                <div class="col-6 col-md-2">
-                  <select class="form-select form-select-sm">
-                    <option>الخبرة</option>
-                    <option>مبتدئ</option>
-                    <option>متوسط</option>
-                    <option>متقدم</option>
-                  </select>
-                </div>
-                <div class="col-12 col-md-4">
-                  <div class="d-flex flex-wrap gap-2 justify-content-md-end">
-                    <button class="btn btn-chip filter-chip active">الكل</button>
-                    <button class="btn btn-chip filter-chip">تقنية</button>
-                    <button class="btn btn-chip filter-chip">إدارة</button>
-                    <button class="btn btn-chip filter-chip">مالية</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row g-3">
-              <div class="col-12 col-md-6 col-xl-4">
-                <article class="job-card glass-panel p-4 h-100">
-                  <div class="d-flex justify-content-between align-items-start gap-3">
-                    <div class="d-flex align-items-center gap-3">
-                      <div class="company-mark company-mark-sm">T</div>
-                      <div>
-                        <div class="text-muted small">TechNova</div>
-                        <h4 class="mb-0">Senior Product Designer</h4>
-                      </div>
-                    </div>
-                    <button class="btn btn-save" type="button" aria-label="حفظ الوظيفة">
-                      <i class="bi bi-bookmark"></i>
-                    </button>
-                  </div>
-                  <div class="mt-3 d-flex flex-wrap gap-2">
-                    <span class="job-tag">عن بُعد</span>
-                    <span class="job-tag">دوام كامل</span>
-                    <span class="job-tag">Senior</span>
-                  </div>
-                  <div class="job-meta mt-3">
-                    <span><i class="bi bi-geo-alt"></i> الرياض</span>
-                    <span><i class="bi bi-cash-coin"></i> 24,000 - 30,000 ر.س</span>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center mt-4">
-                    <span class="ai-match">مطابق 92% لمهاراتك</span>
-                    <a href="#" class="btn btn-primary btn-pill btn-sm">تقدم الآن</a>
-                  </div>
-                </article>
-              </div>
-
-              <div class="col-12 col-md-6 col-xl-4">
-                <article class="job-card glass-panel p-4 h-100">
-                  <div class="d-flex justify-content-between align-items-start gap-3">
-                    <div class="d-flex align-items-center gap-3">
-                      <div class="company-mark company-mark-sm">N</div>
-                      <div>
-                        <div class="text-muted small">North Labs</div>
-                        <h4 class="mb-0">Frontend Engineer</h4>
-                      </div>
-                    </div>
-                    <button class="btn btn-save" type="button" aria-label="حفظ الوظيفة">
-                      <i class="bi bi-bookmark"></i>
-                    </button>
-                  </div>
-                  <div class="mt-3 d-flex flex-wrap gap-2">
-                    <span class="job-tag">هجين</span>
-                    <span class="job-tag">دوام كامل</span>
-                    <span class="job-tag">Mid</span>
-                  </div>
-                  <div class="job-meta mt-3">
-                    <span><i class="bi bi-geo-alt"></i> جدة</span>
-                    <span><i class="bi bi-cash-coin"></i> 18,000 - 24,000 ر.س</span>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center mt-4">
-                    <span class="ai-match">مطابق 88% لمهاراتك</span>
-                    <a href="#" class="btn btn-primary btn-pill btn-sm">تقدم الآن</a>
-                  </div>
-                </article>
-              </div>
-
-              <div class="col-12 col-md-6 col-xl-4">
-                <article class="job-card glass-panel p-4 h-100">
-                  <div class="d-flex justify-content-between align-items-start gap-3">
-                    <div class="d-flex align-items-center gap-3">
-                      <div class="company-mark company-mark-sm">M</div>
-                      <div>
-                        <div class="text-muted small">Mosaic</div>
-                        <h4 class="mb-0">Operations Manager</h4>
-                      </div>
-                    </div>
-                    <button class="btn btn-save" type="button" aria-label="حفظ الوظيفة">
-                      <i class="bi bi-bookmark"></i>
-                    </button>
-                  </div>
-                  <div class="mt-3 d-flex flex-wrap gap-2">
-                    <span class="job-tag">دوام كامل</span>
-                    <span class="job-tag">مكتبي</span>
-                    <span class="job-tag">Senior</span>
-                  </div>
-                  <div class="job-meta mt-3">
-                    <span><i class="bi bi-geo-alt"></i> دبي</span>
-                    <span><i class="bi bi-cash-coin"></i> 26,000 - 34,000 ر.س</span>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center mt-4">
-                    <span class="ai-match">مطابق 90% لمهاراتك</span>
-                    <a href="#" class="btn btn-primary btn-pill btn-sm">تقدم الآن</a>
-                  </div>
-                </article>
-              </div>
-            </div>
-          </div>
-        </section>
-
+                <!-- Search & Stats Section Start -->
         <section class="phase-two-section" id="jobs">
           <div class="container">
             <div class="glass-panel p-4 p-xl-5 mb-5" data-aos="fade-up" data-aos-duration="900">
@@ -411,7 +401,155 @@
             </div>
           </div>
         </section>
+        <!-- Search & Stats Section End -->
 
+        <!-- Featured Jobs Section Start -->
+        <section class="featured-jobs-section" id="about" data-aos="fade-up" data-aos-duration="900">
+          <div class="container">
+            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-start gap-3 mb-4">
+              <div>
+                <div class="eyebrow mb-3">توصيات مخصصة</div>
+                <h3 class="section-title">وظائف مميزة تناسب مهاراتك</h3>
+                <p class="text-muted mt-2 mb-0">نقدم لك فرصًا مختارة بعناية لتناسب خبراتك واهتماماتك وتمنحك خطوة أقرب إلى الوظيفة المناسبة.</p>
+              </div>
+              <div class="d-flex flex-wrap gap-2 align-items-center">
+                <span class="filter-pill">دوام كامل</span>
+                <span class="filter-pill">عن بعد</span>
+                <span class="filter-pill">مستوى متوسط</span>
+              </div>
+            </div>
+
+            <div class="job-filter-bar glass-panel p-3 p-lg-4 mb-4">
+              <div class="row g-2 align-items-center">
+                <div class="col-12 col-md-4">
+                  <div class="position-relative">
+                    <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"></i>
+                    <input type="text" class="form-control form-control-sm ps-5" placeholder="ابحث عن وظيفة" />
+                  </div>
+                </div>
+                <div class="col-6 col-md-2">
+                  <select class="form-select form-select-sm">
+                    <option>نوع العمل</option>
+                    <option>دوام كامل</option>
+                    <option>دوام جزئي</option>
+                    <option>عن بعد</option>
+                  </select>
+                </div>
+                <div class="col-6 col-md-2">
+                  <select class="form-select form-select-sm">
+                    <option>الخبرة</option>
+                    <option>مبتدئ</option>
+                    <option>متوسط</option>
+                    <option>متقدم</option>
+                  </select>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="d-flex flex-wrap gap-2 justify-content-md-end">
+                    <button class="btn btn-chip filter-chip active">الكل</button>
+                    <button class="btn btn-chip filter-chip">تقنية</button>
+                    <button class="btn btn-chip filter-chip">إدارة</button>
+                    <button class="btn btn-chip filter-chip">مالية</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row g-3">
+              <div class="col-12 col-md-6 col-xl-4">
+                <article class="job-card glass-panel p-4 h-100">
+                  <div class="d-flex justify-content-between align-items-start gap-3">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="company-mark company-mark-sm">T</div>
+                      <div>
+                        <div class="text-muted small">TechNova</div>
+                        <h4 class="mb-0">Senior Product Designer</h4>
+                      </div>
+                    </div>
+                    <button class="btn btn-save" type="button" aria-label="حفظ الوظيفة">
+                      <i class="bi bi-bookmark"></i>
+                    </button>
+                  </div>
+                  <div class="mt-3 d-flex flex-wrap gap-2">
+                    <span class="job-tag">عن بُعد</span>
+                    <span class="job-tag">دوام كامل</span>
+                    <span class="job-tag">Senior</span>
+                  </div>
+                  <div class="job-meta mt-3">
+                    <span><i class="bi bi-geo-alt"></i> الرياض</span>
+                    <span><i class="bi bi-cash-coin"></i> 24,000 - 30,000 ر.س</span>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mt-4">
+                    <span class="ai-match">مطابق 92% لمهاراتك</span>
+                    <a href="#" class="btn btn-primary btn-pill btn-sm">تقدم الآن</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-12 col-md-6 col-xl-4">
+                <article class="job-card glass-panel p-4 h-100">
+                  <div class="d-flex justify-content-between align-items-start gap-3">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="company-mark company-mark-sm">N</div>
+                      <div>
+                        <div class="text-muted small">North Labs</div>
+                        <h4 class="mb-0">Frontend Engineer</h4>
+                      </div>
+                    </div>
+                    <button class="btn btn-save" type="button" aria-label="حفظ الوظيفة">
+                      <i class="bi bi-bookmark"></i>
+                    </button>
+                  </div>
+                  <div class="mt-3 d-flex flex-wrap gap-2">
+                    <span class="job-tag">هجين</span>
+                    <span class="job-tag">دوام كامل</span>
+                    <span class="job-tag">Mid</span>
+                  </div>
+                  <div class="job-meta mt-3">
+                    <span><i class="bi bi-geo-alt"></i> جدة</span>
+                    <span><i class="bi bi-cash-coin"></i> 18,000 - 24,000 ر.س</span>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mt-4">
+                    <span class="ai-match">مطابق 88% لمهاراتك</span>
+                    <a href="#" class="btn btn-primary btn-pill btn-sm">تقدم الآن</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-12 col-md-6 col-xl-4">
+                <article class="job-card glass-panel p-4 h-100">
+                  <div class="d-flex justify-content-between align-items-start gap-3">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="company-mark company-mark-sm">M</div>
+                      <div>
+                        <div class="text-muted small">Mosaic</div>
+                        <h4 class="mb-0">Operations Manager</h4>
+                      </div>
+                    </div>
+                    <button class="btn btn-save" type="button" aria-label="حفظ الوظيفة">
+                      <i class="bi bi-bookmark"></i>
+                    </button>
+                  </div>
+                  <div class="mt-3 d-flex flex-wrap gap-2">
+                    <span class="job-tag">دوام كامل</span>
+                    <span class="job-tag">مكتبي</span>
+                    <span class="job-tag">Senior</span>
+                  </div>
+                  <div class="job-meta mt-3">
+                    <span><i class="bi bi-geo-alt"></i> دبي</span>
+                    <span><i class="bi bi-cash-coin"></i> 26,000 - 34,000 ر.س</span>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mt-4">
+                    <span class="ai-match">مطابق 90% لمهاراتك</span>
+                    <a href="#" class="btn btn-primary btn-pill btn-sm">تقدم الآن</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Featured Jobs Section End -->
+
+        <!-- Journey Section Start -->
         <section class="journey-section" id="services" data-aos="fade-up" data-aos-duration="900">
           <div class="container">
             <div class="text-center mb-5">
@@ -458,7 +596,9 @@
             </div>
           </div>
         </section>
+        <!-- Journey Section End -->
 
+        <!-- Testimonials Section Start -->
                 <section class="testimonials-section" id="testimonials" data-aos="fade-up" data-aos-duration="900">
           <div class="container">
             <div class="text-center mb-4 mb-lg-5">
@@ -540,7 +680,9 @@
             </div>
           </div>
         </section>
+        <!-- Testimonials Section End -->
 
+        <!-- CTA Section Start -->
         <section class="cta-section" data-aos="fade-up" data-aos-duration="900">
           <div class="container">
             <div class="cta-shell glass-panel text-center position-relative">
@@ -588,11 +730,15 @@
             </div>
           </div>
         </section>
+        <!-- CTA Section End -->
       </main>
+      <!-- Main Content End -->
     </div>
 
+    <!-- Scripts Section Start -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/main.js"></script>
+    <!-- Scripts Section End -->
   </body>
 </html>
